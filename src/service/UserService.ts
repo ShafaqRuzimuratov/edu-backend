@@ -7,7 +7,7 @@ export class UserService {
     }
 
     async getUserById(id: number): Promise<User | null> {
-        return await UserRepository.findOneBy({ id });
+        return    await UserRepository.findOneBy({ id });
     }
 
     async createUser(user: Partial<User>): Promise<User> {
